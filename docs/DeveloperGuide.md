@@ -448,13 +448,13 @@ Use case ends.
 
     * 1b1. TalentLink explains the input error without adding a contact.
 
-      Use case resumes at step 1.
+      Use case ends.
 
 **Use case: UC03 - Delete a contact**
 
 **MSS**
 
-1. Recruiter requests to view the relevant jobseekers or clients, specifying any search criteria or hidden status.
+1. Recruiter requests to <u>list contacts (UC01)</u>, or <u>search for contacts (UC04)</u>.
 2. TalentLink displays the contacts in the requested scope.
 3. Recruiter identifies a displayed contact and requests its deletion.
 4. TalentLink deletes the contact and confirms the deletion.
@@ -469,11 +469,11 @@ Use case ends.
 
       Use case ends.
 
-* 3a. The contact selection is missing, invalid, or outside the displayed results.
+* 3a. The contact selected is missing, invalid, or outside the displayed results.
 
     * 3a1. TalentLink informs the recruiter of the invalid selection without changing any contact.
 
-      Use case resumes at step 3.
+      Use case ends.
 
 **Use case: UC04 - Search for contacts**
 
@@ -502,7 +502,7 @@ Use case ends.
 
 **MSS**
 
-1. Recruiter requests to view the relevant jobseekers or clients, specifying any search criteria or hidden status.
+1. Recruiter requests to <u>list contacts (UC01)</u>, or <u>search for contacts (UC04)</u>.
 2. TalentLink displays the contacts in the requested scope.
 3. Recruiter identifies a displayed contact and provides the details to update.
 4. TalentLink updates the contact, preserving unspecified details and hidden status, and confirms the update. The current filter remains active; the contact remains visible only if it still matches.
@@ -545,7 +545,7 @@ Use case ends.
 
 **MSS**
 
-1. Recruiter requests to view the relevant jobseekers or clients, specifying any search criteria or hidden status.
+1. Recruiter requests to <u>list contacts (UC01)</u>, or <u>search for contacts (UC04)</u>.
 2. TalentLink displays the contacts in the requested scope.
 3. Recruiter identifies a displayed contact and requests to hide it.
 4. TalentLink hides the contact, preserves its other details, and confirms the change. The contact disappears from the current view if it no longer matches its filter.
@@ -576,7 +576,7 @@ Use case ends.
 
 **MSS**
 
-1. Recruiter requests to view the relevant jobseekers or clients, specifying any search criteria or hidden status.
+1. Recruiter requests to <u>list contacts (UC01)</u>, or <u>search for contacts (UC04)</u>.
 2. TalentLink displays the contacts in the requested scope.
 3. Recruiter identifies a displayed contact and requests to unhide it.
 4. TalentLink unhides the contact, preserves its other details, and confirms the change. The contact disappears from the current view if it no longer matches its filter.
@@ -607,7 +607,7 @@ Use case ends.
 
 **MSS**
 
-1. Recruiter requests to view the relevant jobseekers or clients, specifying any search criteria or hidden status.
+1. Recruiter requests to <u>list contacts (UC01)</u>, or <u>search for contacts (UC04)</u>.
 2. TalentLink displays the contacts in the requested scope.
 3. Recruiter identifies a displayed contact and provides the tags to add.
 4. TalentLink adds tags that are not already present, preserves existing tags and other details, and confirms the update.
@@ -644,7 +644,7 @@ Use case ends.
 
 **MSS**
 
-1. Recruiter requests to view the relevant jobseekers or clients, specifying any search criteria or hidden status.
+1. Recruiter requests to <u>list contacts (UC01)</u>, or <u>search for contacts (UC04)</u>.
 2. TalentLink displays the contacts in the requested scope.
 3. Recruiter identifies a displayed contact and provides the tags to remove.
 4. TalentLink removes the supplied tags that belong to the contact, preserves all other tags and contact details, and confirms the update.
@@ -698,7 +698,7 @@ Use case ends.
 
 **MSS**
 
-1. Recruiter requests to view the relevant jobseekers or clients.
+1. Recruiter requests to <u>list contacts (UC01)</u>, or <u>search for contacts (UC04)</u>.
 2. TalentLink displays the contacts in the requested scope.
 3. Recruiter requests to copy the details of all displayed contacts of one type.
 4. TalentLink copies their details to the clipboard in the displayed order and confirms the copy.
